@@ -1,0 +1,1212 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#142b3b">
+  <title>N74 | Plataforma de captação imobiliária</title>
+  <meta name="description" content="Conheça oportunidades imobiliárias da Construtora Tibério em São Paulo. Studios, apartamentos residenciais e lojas. Atendimento direto e consultivo com Normando Negócios Imobiliários.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://n74.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="N74 | Plataforma de captação imobiliária">
+  <meta property="og:description" content="Oportunidades imobiliárias em São Paulo. Atendimento direto e consultivo.">
+  <meta property="og:url" content="https://n74.com.br/">
+
+  <style>
+    :root{
+      --ink:#172b3a;
+      --navy:#142b3b;
+      --navy2:#203e50;
+      --gold:#b99a68;
+      --paper:#f6f5f1;
+      --white:#fff;
+      --muted:#687783;
+      --line:#e4e6e4;
+      --green:#1f8058;
+      --shadow:0 18px 50px rgba(20,43,59,.09)
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      line-height:1.55
+    }
+
+    a{color:inherit}
+
+    .topbar{
+      height:5px;
+      background:linear-gradient(90deg,var(--gold),#e2d2b5,var(--gold))
+    }
+
+    .shell{
+      width:min(1160px,calc(100% - 44px));
+      margin:auto
+    }
+
+    header{
+      background:var(--navy);
+      color:#fff;
+      position:relative;
+      overflow:hidden
+    }
+
+    header:after{
+      content:"";
+      position:absolute;
+      width:520px;
+      height:520px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:50%;
+      right:-160px;
+      top:-300px;
+      box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.018)
+    }
+
+    .nav{
+      height:82px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:relative;
+      z-index:1
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none
+    }
+
+    .brand-mark{
+      width:39px;
+      height:39px;
+      border:1px solid rgba(222,203,169,.8);
+      display:grid;
+      place-items:center;
+      color:#e0c79f;
+      font-family:Georgia,serif;
+      font-size:18px;
+      letter-spacing:-2px
+    }
+
+    .brand-name{
+      font-size:18px;
+      letter-spacing:2.5px;
+      font-weight:650
+    }
+
+    .brand-sub{
+      display:block;
+      font-size:9px;
+      letter-spacing:2px;
+      color:#c5cdd1;
+      margin-top:1px
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:27px;
+      font-size:12px;
+      color:#d9e0e3
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      transition:.2s
+    }
+
+    .nav-links a:hover{color:#e3c99e}
+
+    .nav-cta{
+      border:1px solid rgba(224,199,159,.75);
+      padding:10px 15px;
+      border-radius:2px;
+      color:#f0dfc4!important
+    }
+
+    .hero{
+      position:relative;
+      z-index:1;
+      padding:76px 0 88px;
+      max-width:760px
+    }
+
+    .eyebrow{
+      font-size:10px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:#d7bd91;
+      font-weight:650
+    }
+
+    h1{
+      font-family:Georgia,"Times New Roman",serif;
+      font-weight:400;
+      font-size:clamp(38px,6vw,66px);
+      line-height:1.08;
+      letter-spacing:-1.4px;
+      margin:20px 0 18px;
+      color:#fff
+    }
+
+    h1 em{
+      font-style:normal;
+      color:#d9c19a
+    }
+
+    .hero p{
+      font-size:16px;
+      color:#d3dce0;
+      max-width:620px;
+      margin:0;
+      line-height:1.8
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:31px
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      text-decoration:none;
+      padding:14px 20px;
+      font-size:12px;
+      font-weight:650;
+      letter-spacing:.2px;
+      border-radius:2px;
+      transition:.2s;
+      border:1px solid transparent;
+      cursor:pointer
+    }
+
+    .btn-gold{
+      background:#d5bd96;
+      color:#192d3a
+    }
+
+    .btn-gold:hover{
+      background:#e5d1ae;
+      transform:translateY(-2px)
+    }
+
+    .btn-outline{
+      border-color:rgba(255,255,255,.38);
+      color:#fff
+    }
+
+    .btn-outline:hover{
+      border-color:#d5bd96;
+      color:#e6d3b1
+    }
+
+    .hero-note{
+      font-size:10px!important;
+      color:#aebdc4!important;
+      margin-top:25px!important;
+      letter-spacing:.4px
+    }
+
+    .trust-strip{
+      background:#fff;
+      border-bottom:1px solid var(--line)
+    }
+
+    .trust-inner{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:25px;
+      padding:23px 0
+    }
+
+    .trust-item{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      color:#52616b;
+      font-size:11px
+    }
+
+    .trust-icon{
+      width:31px;
+      height:31px;
+      border:1px solid #d8d0c2;
+      color:#987d52;
+      display:grid;
+      place-items:center;
+      font-size:14px;
+      flex:none
+    }
+
+    main section{padding:76px 0}
+
+    .section-kicker{
+      font-size:10px;
+      letter-spacing:2.5px;
+      text-transform:uppercase;
+      color:#9a8058;
+      font-weight:700
+    }
+
+    h2{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(30px,4vw,42px);
+      line-height:1.15;
+      font-weight:400;
+      margin:12px 0;
+      color:var(--navy);
+      letter-spacing:-.5px
+    }
+
+    .section-lead{
+      color:var(--muted);
+      font-size:14px;
+      max-width:660px;
+      line-height:1.8;
+      margin:0
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:34px
+    }
+
+    .project{
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:0 8px 25px rgba(20,43,59,.035);
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+      transition:.25s
+    }
+
+    .project:hover{
+      transform:translateY(-4px);
+      box-shadow:var(--shadow)
+    }
+
+    .project-top{
+      height:8px;
+      background:linear-gradient(90deg,#a98b5d,#e0cfb0)
+    }
+
+    .project-body{
+      padding:25px 23px 22px;
+      display:flex;
+      flex-direction:column;
+      flex:1
+    }
+
+    .project-area{
+      font-size:9px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:#9b8057;
+      font-weight:700
+    }
+
+    .project h3{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:27px;
+      font-weight:400;
+      color:var(--navy);
+      margin:10px 0 8px
+    }
+
+    .project p{
+      font-size:12px;
+      line-height:1.75;
+      color:var(--muted);
+      margin:0 0 18px
+    }
+
+    .tags{
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+      margin-bottom:23px
+    }
+
+    .tag{
+      font-size:9px;
+      color:#5c6a72;
+      background:#f2f3f1;
+      border:1px solid #e8e9e5;
+      padding:5px 8px;
+      letter-spacing:.2px
+    }
+
+    .project .btn{
+      margin-top:auto;
+      width:100%;
+      background:var(--navy);
+      color:#fff;
+      padding:12px
+    }
+
+    .project .btn:hover{background:var(--navy2)}
+
+    .project-foot{
+      font-size:9px;
+      color:#8b969c;
+      margin-top:10px;
+      text-align:center
+    }
+
+    .about{background:#edf0ed}
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center
+    }
+
+    .about-panel{
+      background:var(--navy);
+      color:#fff;
+      padding:35px;
+      position:relative;
+      overflow:hidden
+    }
+
+    .about-panel:after{
+      content:"N74";
+      position:absolute;
+      right:-10px;
+      bottom:-43px;
+      font-family:Georgia,serif;
+      font-size:125px;
+      color:rgba(255,255,255,.045);
+      letter-spacing:-8px
+    }
+
+    .about-panel .section-kicker{color:#d6bd94}
+
+    .about-panel h2{
+      color:#fff;
+      font-size:34px
+    }
+
+    .about-panel p{
+      font-size:13px;
+      color:#d0d9dd;
+      line-height:1.85;
+      position:relative;
+      z-index:1
+    }
+
+    .about-copy p{
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.9
+    }
+
+    .about-copy strong{color:var(--navy)}
+
+    .service-list{
+      list-style:none;
+      padding:0;
+      margin:22px 0 0;
+      display:grid;
+      gap:12px
+    }
+
+    .service-list li{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      font-size:12px;
+      color:#465761
+    }
+
+    .check{
+      color:#a18354;
+      font-weight:800
+    }
+
+    .contact{background:#fff}
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr .9fr;
+      gap:55px;
+      align-items:start
+    }
+
+    .contact-card{
+      border:1px solid var(--line);
+      padding:28px;
+      background:#fbfbf9
+    }
+
+    .contact-card label{
+      display:block;
+      font-size:10px;
+      font-weight:650;
+      color:#52616b;
+      margin:0 0 7px;
+      letter-spacing:.4px
+    }
+
+    .contact-card input,
+    .contact-card select{
+      width:100%;
+      padding:12px 13px;
+      border:1px solid #dfe3e0;
+      background:#fff;
+      border-radius:2px;
+      font:inherit;
+      font-size:12px;
+      color:var(--ink);
+      margin-bottom:15px;
+      outline:none
+    }
+
+    .contact-card input:focus,
+    .contact-card select:focus{
+      border-color:#a88c60
+    }
+
+    .contact-card .btn{
+      width:100%;
+      border:0;
+      background:var(--green);
+      color:#fff
+    }
+
+    .contact-card .btn:hover{background:#176b49}
+
+    .privacy{
+      font-size:9px;
+      color:#8a969b;
+      line-height:1.6;
+      margin:11px 0 0
+    }
+
+    .contact-direct{
+      margin-top:23px;
+      display:grid;
+      gap:12px
+    }
+
+    .direct-line{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      font-size:12px;
+      color:#52616b
+    }
+
+    .direct-icon{
+      width:34px;
+      height:34px;
+      display:grid;
+      place-items:center;
+      background:#f0f1ed;
+      color:#92784f
+    }
+
+    .direct-line a{text-decoration:none}
+    .direct-line a:hover{text-decoration:underline}
+
+    .faq{background:var(--paper)}
+
+    .faq-list{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px
+    }
+
+    details{
+      background:#fff;
+      border:1px solid var(--line);
+      padding:17px 19px
+    }
+
+    summary{
+      font-size:12px;
+      font-weight:650;
+      color:var(--navy);
+      cursor:pointer
+    }
+
+    details p{
+      font-size:11px;
+      color:var(--muted);
+      line-height:1.8;
+      margin:12px 0 0
+    }
+
+    footer{
+      background:#102432;
+      color:#c2cdd1;
+      padding:27px 0
+    }
+
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      align-items:center;
+      flex-wrap:wrap
+    }
+
+    .footer-brand{
+      font-size:12px;
+      letter-spacing:1.5px;
+      color:#fff
+    }
+
+    .footer-small{
+      font-size:9px;
+      color:#91a0a7;
+      margin-top:5px
+    }
+
+    .footer-links{
+      display:flex;
+      gap:18px;
+      font-size:10px
+    }
+
+    .footer-links a{
+      color:#c2cdd1;
+      text-decoration:none
+    }
+
+    .footer-links a:hover{color:#e1c99e}
+
+    .whats-float{
+      position:fixed;
+      right:22px;
+      bottom:22px;
+      z-index:5;
+      width:53px;
+      height:53px;
+      border-radius:50%;
+      background:#1f8058;
+      color:#fff;
+      display:grid;
+      place-items:center;
+      text-decoration:none;
+      box-shadow:0 7px 24px rgba(0,0,0,.2);
+      font-size:23px;
+      transition:.2s
+    }
+
+    .whats-float:hover{transform:translateY(-3px)}
+
+    @media(max-width:800px){
+      .nav-links{gap:14px}
+      .projects{grid-template-columns:1fr 1fr}
+      .about-grid,.contact-grid{
+        grid-template-columns:1fr;
+        gap:30px
+      }
+      .about-panel{order:2}
+      .about-copy{order:1}
+    }
+
+    @media(max-width:560px){
+      .shell{width:min(100% - 30px,1160px)}
+      .nav{height:70px}
+      .nav-links a:not(.nav-cta){display:none}
+      .brand-name{font-size:16px}
+      .hero{padding:58px 0 65px}
+      .hero p{font-size:14px}
+      .trust-inner{
+        grid-template-columns:1fr;
+        gap:13px;
+        padding:18px 0
+      }
+      .trust-item{font-size:10px}
+      main section{padding:55px 0}
+      .projects{grid-template-columns:1fr}
+      .project-body{padding:22px}
+      .about-panel{padding:27px}
+      .faq-list{grid-template-columns:1fr}
+      .footer-inner{
+        align-items:flex-start;
+        flex-direction:column
+      }
+      .whats-float{
+        right:15px;
+        bottom:15px;
+        width:49px;
+        height:49px
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"N74 | Plataforma de captação imobiliária",
+    "url":"https://n74.com.br/",
+    "inLanguage":"pt-BR",
+    "description":"Plataforma de apresentação e contato sobre oportunidades imobiliárias em São Paulo."
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="topbar"></div>
+
+  <header>
+    <div class="shell">
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="N74 início">
+          <span class="brand-mark">N74</span>
+          <span>
+            <span class="brand-name">N74</span>
+            <span class="brand-sub">PLATAFORMA IMOBILIÁRIA</span>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#empreendimentos">Empreendimentos</a>
+          <a href="#sobre">Atendimento</a>
+          <a href="#contato" class="nav-cta">Fale com um especialista</a>
+        </div>
+      </nav>
+
+      <div class="hero" id="inicio">
+        <div class="eyebrow">N74 · São Paulo</div>
+
+        <h1>
+          O próximo passo do seu patrimônio começa com uma
+          <em>boa escolha.</em>
+        </h1>
+
+        <p>
+          Uma plataforma de acesso a oportunidades imobiliárias da
+          Construtora Tibério em São Paulo — com informação clara,
+          atendimento consultivo e contato direto.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#empreendimentos">
+            Explorar empreendimentos <span aria-hidden="true">→</span>
+          </a>
+
+          <a class="btn btn-outline"
+             href="https://wa.me/5511920691845?text=Ol%C3%A1%2C%20quero%20conhecer%20as%20oportunidades%20imobili%C3%A1rias%20da%20N74."
+             target="_blank" rel="noopener">
+            Conversar pelo WhatsApp
+          </a>
+        </div>
+
+        <p class="hero-note">
+          STUDIOS · APARTAMENTOS RESIDENCIAIS · LOJAS COMERCIAIS
+        </p>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="trust-strip">
+    <div class="shell trust-inner">
+
+      <div class="trust-item">
+        <span class="trust-icon">◇</span>
+        <span>Oportunidades em diferentes regiões de São Paulo</span>
+      </div>
+
+      <div class="trust-item">
+        <span class="trust-icon">⌂</span>
+        <span>Opções para moradia, investimento e atividade comercial</span>
+      </div>
+
+      <div class="trust-item">
+        <span class="trust-icon">↗</span>
+        <span>Atendimento direto e personalizado</span>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+
+    <!-- EMPREENDIMENTOS -->
+
+    <section id="empreendimentos">
+      <div class="shell">
+
+        <div class="section-kicker">Seleção de oportunidades</div>
+
+        <h2>Empreendimentos em destaque</h2>
+
+        <p class="section-lead">
+          Explore os projetos por localização e conheça as alternativas
+          disponíveis para o seu objetivo. Consulte atendimento para
+          informações atualizadas sobre plantas, valores e disponibilidade.
+        </p>
+
+        <div class="projects">
+
+          <!-- METRÓPOLE -->
+
+          <article class="project">
+            <div class="project-top"></div>
+
+            <div class="project-body">
+              <div class="project-area">Praça da República · Centro</div>
+
+              <h3>Metrópole</h3>
+
+              <p>
+                Uma oportunidade para conhecer um projeto na região da
+                Praça da República, com a conveniência de estar no centro
+                de São Paulo.
+              </p>
+
+              <div class="tags">
+                <span class="tag">São Paulo · Centro</span>
+                <span class="tag">Construtora Tibério</span>
+              </div>
+
+              <a class="btn"
+                 href="https://wa.me/5511920691845?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20conhecer%20o%20empreendimento%20Metr%C3%B3pole%2C%20na%20regi%C3%A3o%20da%20Pra%C3%A7a%20da%20Rep%C3%BAblica.%20Origem%3A%20site%20N74."
+                 target="_blank" rel="noopener"
+                 data-project="Metropole">
+                Consultar Metrópole <span>→</span>
+              </a>
+
+              <div class="project-foot">
+                Informações e condições mediante consulta.
+              </div>
+            </div>
+          </article>
+
+          <!-- TREND SANTA CRUZ -->
+
+          <article class="project">
+            <div class="project-top"></div>
+
+            <div class="project-body">
+              <div class="project-area">Metrô Santa Cruz · Zona Sul</div>
+
+              <h3>Trend Santa Cruz</h3>
+
+              <p>
+                Conheça as oportunidades relacionadas ao Trend Santa Cruz
+                e à região do metrô, na zona sul da capital paulista.
+              </p>
+
+              <div class="tags">
+                <span class="tag">São Paulo · Zona Sul</span>
+                <span class="tag">Construtora Tibério</span>
+              </div>
+
+              <a class="btn"
+                 href="https://wa.me/5511920691845?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20conhecer%20o%20Trend%20Santa%20Cruz.%20Origem%3A%20site%20N74."
+                 target="_blank" rel="noopener"
+                 data-project="Trend Santa Cruz">
+                Consultar Trend Santa Cruz <span>→</span>
+              </a>
+
+              <div class="project-foot">
+                Informações e condições mediante consulta.
+              </div>
+            </div>
+          </article>
+
+          <!-- SUBLIME POMPEIA -->
+
+          <article class="project">
+            <div class="project-top"></div>
+
+            <div class="project-body">
+              <div class="project-area">Pompeia · Zona Oeste</div>
+
+              <h3>Sublime Pompeia</h3>
+
+              <p>
+                Um projeto da Construtora Tibério na Pompeia, com
+                categorias residenciais e comerciais para diferentes
+                perfis de interesse.
+              </p>
+
+              <div class="tags">
+                <span class="tag">Studios</span>
+                <span class="tag">2 e 3 dormitórios</span>
+                <span class="tag">Lojas</span>
+              </div>
+
+              <a class="btn"
+                 href="https://wa.me/5511920691845?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20conhecer%20o%20Sublime%20Pompeia.%20Origem%3A%20site%20N74."
+                 target="_blank" rel="noopener"
+                 data-project="Sublime Pompeia">
+                Consultar Sublime Pompeia <span>→</span>
+              </a>
+
+              <div class="project-foot">
+                Informações e condições mediante consulta.
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE E ATENDIMENTO -->
+
+    <section class="about" id="sobre">
+      <div class="shell about-grid">
+
+        <div class="about-copy">
+          <div class="section-kicker">Relacionamento e orientação</div>
+
+          <h2>Uma conversa bem conduzida faz diferença.</h2>
+
+          <p>
+            A N74 é uma plataforma de captação e relacionamento imobiliário
+            criada para aproximar pessoas de oportunidades em São Paulo.
+            O atendimento é realizado por
+            <strong>Normando | Negócios Imobiliários</strong>,
+            com atuação diretamente junto à Construtora Tibério.
+          </p>
+
+          <p>
+            O primeiro contato pode ser feito pelo WhatsApp ou telefone.
+            A partir do seu interesse, a conversa segue de forma
+            personalizada, considerando o empreendimento e o objetivo
+            da sua busca.
+          </p>
+
+          <ul class="service-list">
+            <li>
+              <span class="check">✓</span>
+              <span>Compra e venda de imóveis</span>
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              <span>Oportunidades para investimento</span>
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              <span>Studios, apartamentos de 2 e 3 dormitórios e lojas</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-panel">
+          <div class="section-kicker">
+            NORMANDO · NEGÓCIOS IMOBILIÁRIOS
+          </div>
+
+          <h2>Direto da construtora. Atendimento próximo.</h2>
+
+          <p>
+            Tradição da Construtora Tibério desde 1964.
+            Conheça os empreendimentos e converse para receber
+            informações de acordo com o que procura.
+          </p>
+
+          <a class="btn btn-gold"
+             href="https://www.tiberio.com.br/"
+             target="_blank" rel="noopener">
+            Conheça a Construtora Tibério ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+
+    <section class="contact" id="contato">
+      <div class="shell contact-grid">
+
+        <div>
+          <div class="section-kicker">Vamos conversar</div>
+
+          <h2>Conte o que você procura.</h2>
+
+          <p class="section-lead">
+            Se preferir, informe seu nome e o assunto de interesse.
+            O botão abrirá uma conversa no WhatsApp com a mensagem
+            inicial preenchida. O envio só acontece quando você
+            confirmar no WhatsApp.
+          </p>
+
+          <div class="contact-direct">
+
+            <div class="direct-line">
+              <span class="direct-icon">◉</span>
+              <span>
+                <strong>WhatsApp</strong><br>
+                <a href="https://wa.me/5511920691845"
+                   target="_blank" rel="noopener">
+                  +55 11 92069-1845
+                </a>
+              </span>
+            </div>
+
+            <div class="direct-line">
+              <span class="direct-icon">✉</span>
+              <span>
+                <strong>E-mail</strong><br>
+                <a href="mailto:normandonegociosimobiliarios@gmail.com">
+                  normandonegociosimobiliarios@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="direct-line">
+              <span class="direct-icon">⌖</span>
+              <span>
+                <strong>Atuação</strong><br>
+                São Paulo – SP
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <form class="contact-card" id="leadForm">
+
+          <label for="leadName">Seu nome (opcional)</label>
+
+          <input
+            id="leadName"
+            name="name"
+            type="text"
+            maxlength="80"
+            placeholder="Como podemos chamar você?"
+          >
+
+          <label for="leadInterest">
+            Qual assunto deseja conhecer?
+          </label>
+
+          <select id="leadInterest" name="interest">
+            <option value="Oportunidades imobiliárias em São Paulo">
+              Quero conhecer oportunidades
+            </option>
+
+            <option value="Metrópole – Praça da República">
+              Metrópole – Praça da República
+            </option>
+
+            <option value="Trend Santa Cruz">
+              Trend Santa Cruz
+            </option>
+
+            <option value="Sublime Pompeia">
+              Sublime Pompeia
+            </option>
+
+            <option value="Studios">Studios</option>
+
+            <option value="Apartamentos de 2 ou 3 dormitórios">
+              Apartamentos de 2 ou 3 dormitórios
+            </option>
+
+            <option value="Lojas comerciais">
+              Lojas comerciais
+            </option>
+
+            <option value="Investimento imobiliário">
+              Investimento imobiliário
+            </option>
+          </select>
+
+          <label for="leadMessage">
+            Observação (opcional)
+          </label>
+
+          <input
+            id="leadMessage"
+            name="message"
+            type="text"
+            maxlength="180"
+            placeholder="Se desejar, conte um pouco mais."
+          >
+
+          <button class="btn" type="submit">
+            Continuar pelo WhatsApp <span>→</span>
+          </button>
+
+          <p class="privacy">
+            Seus dados não são enviados automaticamente por este
+            formulário. As informações preenchidas são usadas apenas
+            para preparar a mensagem que você poderá revisar e enviar
+            pelo WhatsApp.
+          </p>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!-- PERGUNTAS FREQUENTES -->
+
+    <section class="faq">
+      <div class="shell">
+
+        <div class="section-kicker">Informações importantes</div>
+
+        <h2>Perguntas frequentes</h2>
+
+        <div class="faq-list">
+
+          <details>
+            <summary>Como consulto valores e disponibilidade?</summary>
+            <p>
+              Entre em contato e informe o empreendimento ou tipo
+              de imóvel de interesse. Valores, condições comerciais,
+              plantas e disponibilidade devem ser confirmados no
+              atendimento, pois podem mudar.
+            </p>
+          </details>
+
+          <details>
+            <summary>Preciso preencher o formulário para falar?</summary>
+            <p>
+              Não. Você pode iniciar uma conversa diretamente pelo
+              WhatsApp ou utilizar o telefone e o e-mail informados
+              nesta página.
+            </p>
+          </details>
+
+          <details>
+            <summary>Quais tipos de imóveis posso consultar?</summary>
+            <p>
+              Há atendimento para studios, apartamentos residenciais
+              de 2 e 3 dormitórios e lojas comerciais, conforme as
+              opções de cada empreendimento.
+            </p>
+          </details>
+
+          <details>
+            <summary>Como funciona o primeiro contato?</summary>
+            <p>
+              Você indica o assunto de interesse e a conversa é
+              aberta no WhatsApp. Depois de receber sua mensagem,
+              Normando poderá orientar o atendimento e apresentar
+              as informações pertinentes.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+
+  <footer>
+    <div class="shell footer-inner">
+
+      <div>
+        <div class="footer-brand">
+          N74 | PLATAFORMA DE CAPTAÇÃO IMOBILIÁRIA
+        </div>
+
+        <div class="footer-small">
+          Atendimento: NORMANDO | NEGÓCIOS IMOBILIÁRIOS · São Paulo - SP
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.tiberio.com.br/"
+           target="_blank" rel="noopener">
+          Construtora Tibério
+        </a>
+
+        <a href="mailto:normandonegociosimobiliarios@gmail.com">
+          E-mail
+        </a>
+
+        <a href="https://wa.me/5511920691845"
+           target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+
+  <a class="whats-float"
+     href="https://wa.me/5511920691845?text=Ol%C3%A1%2C%20acessei%20o%20site%20N74%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+     target="_blank"
+     rel="noopener"
+     aria-label="Fale pelo WhatsApp">
+    ◔
+  </a>
+
+  <!-- SCRIPT DE CAPTAÇÃO -->
+
+  <script>
+    (function(){
+
+      const form = document.getElementById('leadForm');
+
+      form.addEventListener('submit', function(event){
+
+        event.preventDefault();
+
+        const name = document.getElementById('leadName').value.trim();
+
+        const interest = document.getElementById('leadInterest').value;
+
+        const note = document.getElementById('leadMessage').value.trim();
+
+        const parts = [
+          'Olá! Acessei a plataforma N74 e gostaria de receber informações.',
+          'Interesse: ' + interest,
+          'Origem: site N74 – formulário de contato'
+        ];
+
+        if(name){
+          parts.push('Nome: ' + name);
+        }
+
+        if(note){
+          parts.push('Observação: ' + note);
+        }
+
+        const url =
+          'https://wa.me/5511920691845?text=' +
+          encodeURIComponent(parts.join('\n'));
+
+        window.open(url, '_blank', 'noopener,noreferrer');
+
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
